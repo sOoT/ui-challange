@@ -7,11 +7,295 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/css/foundation.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <p>Hello world!</p>
 
+  <header class="grid-x">
+    <div class="medium-12 cell">
+      <div class="top-bar" id="responsive-menu">
+        <div class="top-bar-left">
+          <div class="logo">
+            <h1 class="show-for-sr">McMakler</h1>
+            <img src="./assets/logo.png" alt="McMakler">
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <span>Kostenlose Service-Hotline</span> <i class="fa fa-phone"></i> <a href="tel:0800 500 80 02">0800 500 80
+            02</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="grid-container">
+    <div class="grid-x">
+      <div class="medium-12 cell text-center">
+        <h2>
+          Vielen Dank für Ihr Interesse <br>
+          an der von uns angebotenen Immobilie.
+        </h2>
+        <h3>Im Folgenden finden Sie alle verfügbaren Unterlagen zum Download.</h3>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="medium-12 cell">
+        <div class="list-container">
+          <div class="list-details-container">
+            <div class="grid-x grid-padding-x">
+
+              <div class="large-2 medium-4 cell">
+                <div class="image-container">
+                  <img src="./assets/house.jpg" alt="House">
+                </div>
+              </div>
+
+              <div class="large-7 medium-8 cell">
+                <ul class="no-bullet">
+                  <li>
+                    <div class="grid-x">
+                      <div class="medium-3 cell">
+                        <span class="title">OUR ID</span>
+                      </div>
+                      <div class="medium-9 cell">
+                        <span class="desc">123456789</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid-x">
+                      <div class="medium-3 cell">
+                        <span class="title">ADDRESS</span>
+                      </div>
+                      <div class="medium-9 cell">
+                        <span class="desc">Finkenweg 81a, 12357 Berlin</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid-x">
+                      <div class="medium-3 cell">
+                        <span class="title">PRICE</span>
+                      </div>
+                      <div class="medium-9 cell">
+                        <span class="desc">2130.000 €</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid-x">
+                      <div class="medium-3 cell">
+                        <span class="title">TOTAL FLOR SPACE</span>
+                      </div>
+                      <div class="medium-9 cell">
+                        <span class="desc">254 m<sup>2</sup></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid-x">
+                      <div class="medium-3 cell">
+                        <span class="title">ROOMS</span>
+                      </div>
+                      <div class="medium-9 cell">
+                        <span class="desc">7</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="large-3 medium-12 cell large-text-center">
+                <a class="button yellow" href="#">Download Expose</a>
+              </div>
+
+            </div>
+          </div>
+          <!--/ .list-detail-container -->
+
+          <div class="list-selector-container">
+            <div class="grid-x grid-padding-x">
+              <div class="medium-12 cell">
+                <label for="select-all">
+                  <input type="checkbox" class="" id="select-all" name="select-all"> <span> 0 / 5 </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <ul class="list-items no-bullet">
+            <li class="list-item has-sub-item image">
+              <div class="accordion">
+                <div class="checkbox list-item-box">
+                  <input type="checkbox" name="images" id="images" class="selector">
+                </div>
+                <div class="icon-container list-item-box">
+                  <i class="fa fa-angle-down"></i>
+                  <i class="fa fa-folder fa-2x"></i>
+                </div>
+                <div class="title-container list-item-box">Images</div>
+                <div class="download-button list-item-box">
+                  <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+                </div>
+              </div>
+              <ul class="no-bullet list-item-sub">
+                <li class="list-item">
+                  <div class="checkbox list-item-box">
+                    <input type="checkbox" name="images" id="images" class="selector">
+                  </div>
+                  <div class="icon-container list-item-box">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </div>
+                  <div class="title-container list-item-box">
+                    <span class="title">Image</span>
+                    <span class="folder-name">Images</span>
+                  </div>
+                  <div class="download-button list-item-box">
+                    <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                    <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+                  </div>
+                </li>
+                <li class="list-item image">
+                  <div class="checkbox list-item-box">
+                    <input type="checkbox" name="images" id="images" class="selector">
+                  </div>
+                  <div class="icon-container list-item-box">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </div>
+                  <div class="title-container list-item-box"><span class="title">Image</span> <span class="folder-name">Images</span></div>
+                  <div class="download-button list-item-box">
+                    <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                    <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+                  </div>
+                </li>
+                <li class="list-item image">
+                  <div class="checkbox list-item-box">
+                    <input type="checkbox" name="images" id="images" class="selector">
+                  </div>
+                  <div class="icon-container list-item-box">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </div>
+                  <div class="title-container list-item-box"><span class="title">Image</span> <span class="folder-name">Images</span></div>
+                  <div class="download-button list-item-box">
+                    <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                    <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item pdf">
+              <div class="checkbox list-item-box">
+                <input type="checkbox" name="images" id="images" class="selector">
+              </div>
+              <div class="icon-container list-item-box">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div class="title-container list-item-box"><span class="title">Test Street 123</span>
+                <span class="folder-name">Building Plan, Images, Ground Plan, Entry in the land register</span>
+              </div>
+              <div class="download-button list-item-box">
+                <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+              </div>
+            </li>
+            <li class="list-item doc">
+              <div class="checkbox list-item-box">
+                <input type="checkbox" name="images" id="images" class="selector">
+              </div>
+              <div class="icon-container list-item-box">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-word-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div class="title-container list-item-box"><span class="title">Energy Certificate</span>
+                <span class="folder-name">Energy Certificate</span>
+              </div>
+              <div class="download-button list-item-box">
+                <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+              </div>
+            </li>
+            <li class="list-item powerpoint">
+              <div class="checkbox list-item-box">
+                <input type="checkbox" name="images" id="images" class="selector">
+              </div>
+              <div class="icon-container list-item-box">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-powerpoint-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div class="title-container list-item-box"><span class="title">OA-Paper</span>
+                <span class="folder-name">OA-Paper</span>
+              </div>
+              <div class="download-button list-item-box">
+                <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+              </div>
+            </li>
+            <li class="list-item image">
+              <div class="checkbox list-item-box">
+                <input type="checkbox" name="images" id="images" class="selector">
+              </div>
+              <div class="icon-container list-item-box">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-image-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div class="title-container list-item-box"><span class="title">Innenraum</span>
+                <span class="folder-name">Floor Plan</span>
+              </div>
+              <div class="download-button list-item-box">
+                <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+              </div>
+            </li>
+            <li class="list-item zip">
+              <div class="checkbox list-item-box">
+                <input type="checkbox" name="images" id="images" class="selector">
+              </div>
+              <div class="icon-container list-item-box">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-file-zip-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+              <div class="title-container list-item-box"><span class="title">Photo Session</span>
+                <span class="folder-name">92 Photos, innenansicht, aussenansicht</span>
+              </div>
+              <div class="download-button list-item-box">
+                <a href="#" class="see-file"><i class="fa fa-eye"></i></a>
+                <a href="#" class="download-file"><i class="fa fa-download"></i></a>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <!--/ .list-container -->
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.0/js/foundation.min.js"></script>
   <script src="./index.js"></script>
 </body>
 

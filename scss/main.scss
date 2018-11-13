@@ -1,3 +1,154 @@
-p {
-    color: green;
+@import './colors';
+
+// General Styles
+.button {
+  &.yellow {
+    background-color: $yellow;
+    @media screen and (max-width: 639px) {
+      width: 100%;
+    }
+  }
+}
+
+a {
+  color: $black;
+  &:hover {
+    color: lighten($black, 30%);
+  }
+}
+// Header Styles
+
+header {
+  border-bottom: 1px solid $gray;
+}
+
+.top-bar {
+  background-color: transparent;
+  .logo {
+    max-width: 150px;
+  }
+  &-right {
+    span {
+      color: $light-gray;
+    }
+    a {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Header Section Styles
+main {
+  padding-top: 3rem;
+  h2 {
+    line-height: 1;
+  }
+  h3 {
+    color: $gray;
+  }
+}
+
+.list-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid $light-gray;
+  .list-details-container {
+    padding: 2rem;
+    span {
+      font-size: .875rem;
+      &.title {
+        color: $gray;
+      }
+    }
+  }
+  .list-selector-container {
+    padding: 1rem;
+  }
+  .list-items {
+    border-top: 1px solid $light-gray;
+    margin: 0;
+    > .list-item {
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+    .list-item {
+      border-bottom: 1px solid $light-gray;
+      background: $white;
+      vertical-align: top;
+      &.has-sub-item {
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
+      }
+      
+      .list-item-box {
+        display: inline-block;
+        &.checkbox {
+          padding: 1rem;
+          top: 0;
+          position: relative;
+          height: 100%;
+          input {
+             margin: 0;
+          }
+        }
+        &.icon-container {
+          @media screen and (max-width: 639px) {
+            display: none;
+          }
+          padding: 1rem;
+          padding-left: 0;
+          i {
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+        &.title-container {
+          max-width: 60%;
+          @media screen and (max-width: 1023px) {
+            padding-top: 1rem;
+          }
+          .folder-name {
+            font-size: .875rem;
+            color: $gray;
+            margin-left: 1rem;
+            @media screen and (max-width: 1023px) {
+              
+              margin: 0;
+            }
+          }
+          span {
+            @media screen and (max-width: 1023px) {
+              display: block;
+            }
+          }
+        }
+        &.download-button {
+          padding: 1rem;
+          float: right;
+        }
+      }
+      .list-item-sub {
+        border-top: 1px solid $light-gray;
+        display: none;
+        &.is-active {
+          display: block;
+        }
+        .list-item {
+          padding-left: 2.5rem;
+          &:hover {
+            background-color: $light-gray;
+          }
+        }
+      }
+      &.image, &.zip {
+        @media screen and (max-width: 639px) {
+          display: none;
+        }
+      }
+    }
+  }
 }

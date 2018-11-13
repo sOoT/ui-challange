@@ -26,3 +26,5 @@ jest_*
 
 
 *-error.log
+
+/.history

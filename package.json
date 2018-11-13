@@ -19,5 +19,8 @@
   "devDependencies": {
     "node-sass": "^4.9.0",
     "parcel": "^1.9.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }
